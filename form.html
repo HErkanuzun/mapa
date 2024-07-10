@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+
+    <meta name="robots" content="noindex">
+
+    <meta name="site_locale" content="en">
+    </meta>
+    <title>MAPA</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="https://kajabi-app-assets.kajabi-cdn.com/assets/checkout_next_gen-84813c3c18af00fac5ac5bca4cc63f2d075eda664bc6391f6a30ea0f0412a66e.css"/>
+
+    <link rel="stylesheet" media="screen" href="https://kajabi-app-assets.kajabi-cdn.com/assets/ladera_masquerade_member-bd5df7a6bc030c98f0b0e14c063675a95d915dc9fb80cd8032fdc58696c73bfa.css"/>
+    <meta name="csrf-param" content="authenticity_token"/>
+    <meta name="csrf-token" content="ZaHa7TWsXiFtAJ6pTqBVfbKYrjKZe0dqqstjzU0JrUo1DFKF+vq2kimV5yxMRh8Jdhm0mt65d8AodMXgwxHGUA=="/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTBWYV09JY{}&l=kajabiDataLayer"></script>
+    <script>
+    window.kajabiDataLayer = window.kajabiDataLayer || [];
+    function ktag() {
+        kajabiDataLayer.push(arguments);
+    }
+    ktag('js', new Date());
+    ktag('config', 'G-GTBWYV09JY');
+    </script>
+
+    <script>
+    const analyticsOptions = {
+        "event_category": "member_checkout",
+        "productSku": 2149634238,
+        "productName": "Applied Performance Coach Certification and Mentorship (Summer 2024)",
+        "checkoutVersion": "next_gen",
+        "currencyCode": "USD",
+        "transactionRevenue": "995.0",
+        "offerType": "single",
+        "quantityRemainingDisplayed": false,
+        "memberLoginRequired": false,
+        "priceStrategy": "fixed",
+        "siteId": 2147639184,
+        "siteName": "Applied Performance Coach",
+        "accountId": 2147620358,
+        "heroTier": "250k",
+        "businessType": "coach",
+        "experience": "existing_online_part_time",
+        "industry": "health_fitness",
+        "isKajabiPayments": false
+    }
+    ;
+    const kajabiPaymentsOffer = (false === true);
+
+    if (kajabiPaymentsOffer) {
+        analyticsOptions.applePayDisplayed = !!window.ApplePaySession
+    }
+
+    ktag('event', 'view_cart', analyticsOptions);
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+    h3.b_heading {
+        font-size: 18px;
+    }
+
+    p.s_price {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: #4b4e60;
+        font-family: 'Open Sans';
+        padding: 10px 0px;
+    }
+
+    .prices_s:nth-child(2) .p_bottom {
+        display: none !important;
+    }
+
+    p.link {
+        display: none !important;
+    }
+
+    .prices_s i.fa {
+        VERTICAL-ALIGN: middle;
+        margin-top: -4px;
+        padding-right: 9px;
+        font-size: 23px;
+    }
+
+    .prices_s i.fa.fa-circle-o {
+        display: none;
+    }
+
+    a.prices_s.act i.fa.fa-circle-o {
+        display: inline-block !important;
+        color: #027bfe;
+        font-weight: 700;
+    }
+
+    a.prices_s.act i.fa.fa-circle-thin {
+        display: none !important;
+    }
+
+    .p_hodler {
+        position: relative;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    a.prices_s {
+        padding: 15px 0px;
+        display: block;
+        border-top: 1px solid #EBF0F0 !important;
+    }
+
+    h3.price_s_title {
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
+        color: #5a7184;
+    }
+
+    .price_s_price {
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: right;
+    }
+
+    .price_s_title strong {
+        display: none !important;
+    }
+
+    span.p_top {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        color: #5a7184;
+    }
+
+    .prices_s i.fa.fa-circle-o {
+        font-size: 23px;
+    }
+
+    span.p_bottom {
+        font-size: 13px;
+        line-height: 13px;
+        color: #747682;
+    }
+    </style>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2147639184/images/5400f3-3bb5-2bb0-b67a-48c1c2b8f10_APC_Favicon_2.png"/>
+
+</head>
+<body class="offer-checkout offer-checkout-show offer-checkout-offer-2149634238 offer-checkout-next-gen checkout-email-autofill offer-checkout--analytics">
+    <script src="https://kajabi-app-assets.kajabi-cdn.com/assets/iframe_detector-fd14b93fd8c51d6d2b4f1c051468f8a1c199e42958e8e2c1426ffe071be35f16.js"></script>
+
+    <script type="text/javascript">
+    window.CLIENT_INFO = {
+        site_id: 2147639184,
+        locale: "en",
+        features: {},
+        liveCredentials: {},
+        imagePaths: {
+            default: "https://kajabi-app-assets.kajabi-cdn.com/assets/default_image-fe4525530634f6e40a5b5bf0aef3b9d6b48fa9192f121859d82d6bf59d9b7c20.png",
+            default_avatar: "https://kajabi-app-assets.kajabi-cdn.com/assets/defaults/default_avatar-b3744a61876b6f23004ea211ac36efc3ce9b91d5e3cfe612869f2f48f20c4f38.jpg",
+        }
+    };
+
+
+    window.CLIENT_INFO.ga_id = "G-GTBWYV09JY"
+
+    window.CLIENT_INFO.env = "production";
+    window.CLIENT_INFO.sentry_dsn = 'https://d12d127409fc4e5ab2f1cfe05c49b376:1d9ce92bb71b4391a6c2536171cbabe8@o485653.ingest.sentry.io/5541287';
+    window.CLIENT_INFO.app_name = 'kajabi-storefronts-production';
+
+
+
+    window.CLIENT_INFO.offer_token = "vSzcSny2";
+    </script>
+
+    <style id="offer-checkout-page-color" type="text/css">
+    :root {
+        --offer-checkout-primary-color: #0d2b52;
+    }
+
+    .checkout-banner {
+        background-color: #0d2b52;
+    }
+
+    .checkout-panel .checkbox input[type="checkbox"]:before {
+        color: #0d2b52;
+    }
+
+    .checkout-panel input:focus:not(.parsley-error), .checkout-panel select:focus:not(.parsley-error) {
+        border-color: #0d2b52;
+        box-shadow: none;
+    }
+
+    .checkout-panel input[type=checkbox]:focus:not(.parsley-error), .checkout-panel input[type=checkbox]:active:not(.parsley-error) {
+        border-color: currentColor;
+    }
+
+    .checkout-personal-info-container .account-check-spinner > div {
+        background-color: #0d2b52;
+    }
+
+    .price-breakdown-coupon {
+        color: #0d2b52;
+    }
+
+    .btn-text {
+        color: #0d2b52;
+    }
+
+    a:hover {
+        color: #0d2b52;
+    }
+
+    .offer-checkout-form .btn-checkout, .offer-checkout-form .btn-primary, .checkout-form-container .btn-checkout, .checkout-form-container .btn-primary, .new-offer-upsell .btn-offer-upsell, .upsell-panel .btn-primary {
+        border-color: #0d2b52;
+        background-color: #0d2b52;
+    }
+
+    .checkout-form-container .btn-checkout:hover, .checkout-form-container .btn-checkout:focus, .checkout-form-container .btn-checkout:active, .checkout-form-container .btn-checkout.active, .checkout-form-container .btn-primary:hover, .checkout-form-container .btn-primary:focus, .checkout-form-container .btn-primary:active, .checkout-form-container .btn-primary.active, .new-offer-upsell .btn-offer-upsell:hover, .new-offer-upsell .btn-offer-upsell:focus, .new-offer-upsell .btn-offer-upsell:active, .new-offer-upsell .btn-offer-upsell.active, .upsell-panel .btn-primary:hover, .upsell-panel .btn-primary:focus, .upsell-panel .btn-primary:active, .upsell-panel .btn-primary.active {
+        border-color: #061426;
+        background-color: #061426;
+        .checkout-form-container .btn-outline {
+            color: #0d2b52;
+            background-color: transparent;
+        }
+
+        .checkout-form-container .btn-outline:hover {
+            color: #0d2b52;
+            border-color: #0d2b52;
+            background-color: #5291e4;
+        }
+
+        .offer-checkout-multi-step .offer-checkout-form .checkout-order-bump {
+            background-color: rgba(13, 43, 82, 0.05);
+            border-color: rgba(13, 43, 82, 0.7);
+            padding: 15px;
+        }
+        </style>
+
+    <form class="simple_form offer-checkout-form" id="new_checkout_offer" data-fancy-placeholders="" data-parsley-validate="true" data-stripe-form-disabled="false" novalidate="novalidate" action="/offers/vSzcSny2/checkout" accept-charset="UTF-8" method="post">
+        <input name="utf8" type="hidden" value="&#x2713;"/>
+        <input type="hidden" name="authenticity_token" value="lEJQl4Fuy6M23pmn9YSqtIpHNlIkqDqWqXK3TVJcES2Mjo955Q1wdFQ+KVf+5capCLKIDktnEN5Epu0p31bLdQ=="/>
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+
+                <div class="row" data-kjb-element="mobile-form-top">
+                    <div class="col-md-offset-1 col-md-5 checkout-content-left">
+                        <div class="panel checkout-panel" define="{ checkoutPanel: new App.CheckoutPanel(this, {&quot;hasSetupFee&quot;:false,&quot;showPayment&quot;:true,&quot;basePrice&quot;:{&quot;fractional&quot;:&quot;99500.0&quot;,&quot;currency&quot;:{&quot;id&quot;:&quot;usd&quot;,&quot;alternate_symbols&quot;:[&quot;US$&quot;],&quot;decimal_mark&quot;:&quot;.&quot;,&quot;disambiguate_symbol&quot;:&quot;US$&quot;,&quot;html_entity&quot;:&quot;$&quot;,&quot;iso_code&quot;:&quot;USD&quot;,&quot;iso_numeric&quot;:&quot;840&quot;,&quot;name&quot;:&quot;United States Dollar&quot;,&quot;priority&quot;:1,&quot;smallest_denomination&quot;:1,&quot;subunit&quot;:&quot;Cent&quot;,&quot;subunit_to_unit&quot;:100,&quot;symbol&quot;:&quot;$&quot;,&quot;symbol_first&quot;:true,&quot;thousands_separator&quot;:&quot;,&quot;},&quot;bank&quot;:{&quot;store&quot;:{&quot;index&quot;:{&quot;USD_TO_AED&quot;:3.673,&quot;AED_TO_USD&quot;:0.27225701061802343,&quot;USD_TO_AFN&quot;:71.158522,&quot;AFN_TO_USD&quot;:0.01405313055827663,&quot;USD_TO_ALL&quot;:92.733468,&quot;ALL_TO_USD&quot;:0.010783593254594987,&quot;USD_TO_AMD&quot;:388.080536,&quot;AMD_TO_USD&quot;:0.0025767847321258083,&quot;USD_TO_ANG&quot;:1.802963,&quot;ANG_TO_USD&quot;:0.55464255228754,&quot;USD_TO_AOA&quot;:871.15,&quot;AOA_TO_USD&quot;:0.0011479079377833899,&quot;USD_TO_ARS&quot;:917.2448,&quot;ARS_TO_USD&quot;:0.0010902214981213301,&quot;USD_TO_AUD&quot;:1.483371,&quot;AUD_TO_USD&quot;:0.674140184754859,&quot;USD_TO_AWG&quot;:1.8,&quot;AWG_TO_USD&quot;:0.5555555555555556,&quot;USD_TO_AZN&quot;:1.7,&quot;AZN_TO_USD&quot;:0.5882352941176471,&quot;USD_TO_BAM&quot;:1.807955,&quot;BAM_TO_USD&quot;:0.5531111117256791,&quot;USD_TO_BBD&quot;:2,&quot;BBD_TO_USD&quot;:0.5,&quot;USD_TO_BDT&quot;:117.547554,&quot;BDT_TO_USD&quot;:0.008507195309227786,&quot;USD_TO_BGN&quot;:1.80936,&quot;BGN_TO_USD&quot;:0.5526816111774329,&quot;USD_TO_BHD&quot;:0.376898,&quot;BHD_TO_USD&quot;:2.65323774602147,&quot;USD_TO_BIF&quot;:2879.427563,&quot;BIF_TO_USD&quot;:0.00034729125082005055,&quot;USD_TO_BMD&quot;:1,&quot;BMD_TO_USD&quot;:1.0,&quot;USD_TO_BND&quot;:1.350514,&quot;BND_TO_USD&quot;:0.7404588179019248,&quot;USD_TO_BOB&quot;:6.912713,&quot;BOB_TO_USD&quot;:0.1446610035741394,&quot;USD_TO_BRL&quot;:5.414,&quot;BRL_TO_USD&quot;:0.1847063169560399,&quot;USD_TO_BSD&quot;:1,&quot;BSD_TO_USD&quot;:1.0,&quot;USD_TO_BTC&quot;:1.727653e-05,&quot;BTC_TO_USD&quot;:57881.99366423698,&quot;USD_TO_BTN&quot;:83.513919,&quot;BTN_TO_USD&quot;:0.01197405189427166,&quot;USD_TO_BWP&quot;:13.537011,&quot;BWP_TO_USD&quot;:0.07387155111272348,&quot;USD_TO_BYN&quot;:3.273879,&quot;BYN_TO_USD&quot;:0.3054480632912823,&quot;USD_TO_BZD&quot;:2.016473,&quot;BZD_TO_USD&quot;:0.4959153928666538,&quot;USD_TO_CAD&quot;:1.363175,&quot;CAD_TO_USD&quot;:0.7335815284171144,&quot;USD_TO_CDF&quot;:2846.150192,&quot;CDF_TO_USD&quot;:0.0003513518024490817,&quot;USD_TO_CHF&quot;:0.897795,&quot;CHF_TO_USD&quot;:1.1138400191580484,&quot;USD_TO_CLF&quot;:0.033902,&quot;CLF_TO_USD&quot;:29.4967848504513,&quot;USD_TO_CLP&quot;:935.45,&quot;CLP_TO_USD&quot;:0.001069004222566679,&quot;USD_TO_CNY&quot;:7.2726,&quot;CNY_TO_USD&quot;:0.1375024062921101,&quot;USD_TO_COP&quot;:4050.094875,&quot;COP_TO_USD&quot;:0.0002469077962031692,&quot;USD_TO_CRC&quot;:534.844804,&quot;CRC_TO_USD&quot;:0.001869701252627295,&quot;USD_TO_CUC&quot;:1,&quot;CUC_TO_USD&quot;:1.0,&quot;USD_TO_CUP&quot;:25.75,&quot;CUP_TO_USD&quot;:0.038834951456310676,&quot;USD_TO_CVE&quot;:101.927839,&quot;CVE_TO_USD&quot;:0.009810862369013826,&quot;USD_TO_CZK&quot;:23.382599,&quot;CZK_TO_USD&quot;:0.04276684555040267,&quot;USD_TO_DJF&quot;:177.827972,&quot;DJF_TO_USD&quot;:0.005623412271720672,&quot;USD_TO_DKK&quot;:6.897908,&quot;DKK_TO_USD&quot;:0.14497148990679493,&quot;USD_TO_DOP&quot;:59.141622,&quot;DOP_TO_USD&quot;:0.016908565679852338,&quot;USD_TO_DZD&quot;:134.298383,&quot;DZD_TO_USD&quot;:0.007446106033905114,&quot;USD_TO_EGP&quot;:48.0756,&quot;EGP_TO_USD&quot;:0.02080057243175332,&quot;USD_TO_ERN&quot;:15,&quot;ERN_TO_USD&quot;:0.06666666666666667,&quot;USD_TO_ETB&quot;:57.760285,&quot;ETB_TO_USD&quot;:0.017312933964920705,&quot;USD_TO_EUR&quot;:0.9247,&quot;EUR_TO_USD&quot;:1.0814318157240186,&quot;USD_TO_FJD&quot;:2.2342,&quot;FJD_TO_USD&quot;:0.4475875033569063,&quot;USD_TO_FKP&quot;:0.781873,&quot;FKP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_GBP&quot;:0.781873,&quot;GBP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_GEL&quot;:2.74,&quot;GEL_TO_USD&quot;:0.36496350364963503,&quot;USD_TO_GGP&quot;:0.781873,&quot;GGP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_GHS&quot;:15.405948,&quot;GHS_TO_USD&quot;:0.06490999450342166,&quot;USD_TO_GIP&quot;:0.781873,&quot;GIP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_GMD&quot;:67.75,&quot;GMD_TO_USD&quot;:0.014760147601476014,&quot;USD_TO_GNF&quot;:8614.415277,&quot;GNF_TO_USD&quot;:0.00011608448952651996,&quot;USD_TO_GTQ&quot;:7.769638,&quot;GTQ_TO_USD&quot;:0.12870612504726733,&quot;USD_TO_GYD&quot;:209.304128,&quot;GYD_TO_USD&quot;:0.004777736634033324,&quot;USD_TO_HKD&quot;:7.81114,&quot;HKD_TO_USD&quot;:0.1280222861195677,&quot;USD_TO_HNL&quot;:24.777797,&quot;HNL_TO_USD&quot;:0.040358713084944556,&quot;USD_TO_HRK&quot;:6.967022,&quot;HRK_TO_USD&quot;:0.1435333489688995,&quot;USD_TO_HTG&quot;:132.250562,&quot;HTG_TO_USD&quot;:0.007561404540572009,&quot;USD_TO_HUF&quot;:364.17074,&quot;HUF_TO_USD&quot;:0.0027459647087517245,&quot;USD_TO_IDR&quot;:16266.888901,&quot;IDR_TO_USD&quot;:6.147456997376587e-05,&quot;USD_TO_ILS&quot;:3.67293,&quot;ILS_TO_USD&quot;:0.2722621993884991,&quot;USD_TO_IMP&quot;:0.781873,&quot;IMP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_INR&quot;:83.48315,&quot;INR_TO_USD&quot;:0.011978465115415506,&quot;USD_TO_IQD&quot;:1310.48964,&quot;IQD_TO_USD&quot;:0.0007630735638627406,&quot;USD_TO_IRR&quot;:42087.5,&quot;IRR_TO_USD&quot;:2.376002376002376e-05,&quot;USD_TO_ISK&quot;:137.89,&quot;ISK_TO_USD&quot;:0.007252157516861267,&quot;USD_TO_JEP&quot;:0.781873,&quot;JEP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_JMD&quot;:156.816338,&quot;JMD_TO_USD&quot;:0.0063768865716019975,&quot;USD_TO_JOD&quot;:0.7087,&quot;JOD_TO_USD&quot;:1.4110342881332016,&quot;USD_TO_JPY&quot;:161.2895,&quot;JPY_TO_USD&quot;:0.0062000316201612626,&quot;USD_TO_KES&quot;:128.25,&quot;KES_TO_USD&quot;:0.007797270955165692,&quot;USD_TO_KGS&quot;:85.6423,&quot;KGS_TO_USD&quot;:0.011676472957872452,&quot;USD_TO_KHR&quot;:4117.1952,&quot;KHR_TO_USD&quot;:0.00024288379623098753,&quot;USD_TO_KMF&quot;:454.500277,&quot;KMF_TO_USD&quot;:0.0022002186810548413,&quot;USD_TO_KPW&quot;:900,&quot;KPW_TO_USD&quot;:0.0011111111111111111,&quot;USD_TO_KRW&quot;:1383.74908,&quot;KRW_TO_USD&quot;:0.0007226743738828719,&quot;USD_TO_KWD&quot;:0.30604,&quot;KWD_TO_USD&quot;:3.267546725918181,&quot;USD_TO_KYD&quot;:0.833722,&quot;KYD_TO_USD&quot;:1.1994405809130622,&quot;USD_TO_KZT&quot;:480.519165,&quot;KZT_TO_USD&quot;:0.0020810824475648126,&quot;USD_TO_LAK&quot;:22118.792176,&quot;LAK_TO_USD&quot;:4.52104252367383e-05,&quot;USD_TO_LBP&quot;:89575.907135,&quot;LBP_TO_USD&quot;:1.1163716137341464e-05,&quot;USD_TO_LKR&quot;:304.129652,&quot;LKR_TO_USD&quot;:0.0032880713650374344,&quot;USD_TO_LRD&quot;:194.48386,&quot;LRD_TO_USD&quot;:0.0051418148529137585,&quot;USD_TO_LSL&quot;:18.137968,&quot;LSL_TO_USD&quot;:0.05513296748566322,&quot;USD_TO_LYD&quot;:4.854894,&quot;LYD_TO_USD&quot;:0.20597772062582623,&quot;USD_TO_MAD&quot;:9.854455,&quot;MAD_TO_USD&quot;:0.10147694621366682,&quot;USD_TO_MDL&quot;:17.719587,&quot;MDL_TO_USD&quot;:0.05643472390186069,&quot;USD_TO_MGA&quot;:4498.01411,&quot;MGA_TO_USD&quot;:0.0002223203341618686,&quot;USD_TO_MKD&quot;:56.900459,&quot;MKD_TO_USD&quot;:0.01757455067278104,&quot;USD_TO_MMK&quot;:2203.340001,&quot;MMK_TO_USD&quot;:0.0004538564177776211,&quot;USD_TO_MNT&quot;:3450,&quot;MNT_TO_USD&quot;:0.0002898550724637681,&quot;USD_TO_MOP&quot;:8.05077,&quot;MOP_TO_USD&quot;:0.12421172136329817,&quot;USD_TO_MUR&quot;:46.76,&quot;MUR_TO_USD&quot;:0.0213857998289136,&quot;USD_TO_MVR&quot;:15.46,&quot;MVR_TO_USD&quot;:0.0646830530401035,&quot;USD_TO_MWK&quot;:1734.791738,&quot;MWK_TO_USD&quot;:0.0005764380692479411,&quot;USD_TO_MXN&quot;:17.913261,&quot;MXN_TO_USD&quot;:0.055824564829374174,&quot;USD_TO_MYR&quot;:4.7075,&quot;MYR_TO_USD&quot;:0.21242697822623474,&quot;USD_TO_MZN&quot;:63.909993,&quot;MZN_TO_USD&quot;:0.015647005312612067,&quot;USD_TO_NAD&quot;:18.137968,&quot;NAD_TO_USD&quot;:0.05513296748566322,&quot;USD_TO_NGN&quot;:1406,&quot;NGN_TO_USD&quot;:0.0007112375533428165,&quot;USD_TO_NIO&quot;:36.82836,&quot;NIO_TO_USD&quot;:0.02715298753460648,&quot;USD_TO_NOK&quot;:10.60583,&quot;NOK_TO_USD&quot;:0.09428776437110534,&quot;USD_TO_NPR&quot;:133.622338,&quot;NPR_TO_USD&quot;:0.007483778647848535,&quot;USD_TO_NZD&quot;:1.632293,&quot;NZD_TO_USD&quot;:0.6126351090153545,&quot;USD_TO_OMR&quot;:0.384974,&quot;OMR_TO_USD&quot;:2.5975780182557786,&quot;USD_TO_PAB&quot;:1,&quot;PAB_TO_USD&quot;:1.0,&quot;USD_TO_PEN&quot;:3.792286,&quot;PEN_TO_USD&quot;:0.2636931919164325,&quot;USD_TO_PGK&quot;:3.911092,&quot;PGK_TO_USD&quot;:0.25568306754226183,&quot;USD_TO_PHP&quot;:58.514998,&quot;PHP_TO_USD&quot;:0.01708963572040112,&quot;USD_TO_PKR&quot;:278.512736,&quot;PKR_TO_USD&quot;:0.0035905000768079775,&quot;USD_TO_PLN&quot;:3.935086,&quot;PLN_TO_USD&quot;:0.25412405218081635,&quot;USD_TO_PYG&quot;:7543.135459,&quot;PYG_TO_USD&quot;:0.0001325708659794598,&quot;USD_TO_QAR&quot;:3.647734,&quot;QAR_TO_USD&quot;:0.27414279659646235,&quot;USD_TO_RON&quot;:4.598,&quot;RON_TO_USD&quot;:0.21748586341887777,&quot;USD_TO_RSD&quot;:108.222,&quot;RSD_TO_USD&quot;:0.009240265380421726,&quot;USD_TO_RUB&quot;:87.000408,&quot;RUB_TO_USD&quot;:0.011494198969733568,&quot;USD_TO_RWF&quot;:1308.849824,&quot;RWF_TO_USD&quot;:0.0007640295942768146,&quot;USD_TO_SAR&quot;:3.750806,&quot;SAR_TO_USD&quot;:0.2666093634274873,&quot;USD_TO_SBD&quot;:8.435801,&quot;SBD_TO_USD&quot;:0.1185423885651167,&quot;USD_TO_SCR&quot;:13.825882,&quot;SCR_TO_USD&quot;:0.07232811620987363,&quot;USD_TO_SDG&quot;:601,&quot;SDG_TO_USD&quot;:0.0016638935108153079,&quot;USD_TO_SEK&quot;:10.553268,&quot;SEK_TO_USD&quot;:0.09475737752514198,&quot;USD_TO_SGD&quot;:1.350669,&quot;SGD_TO_USD&quot;:0.7403738443689757,&quot;USD_TO_SHP&quot;:0.781873,&quot;SHP_TO_USD&quot;:1.278980090116937,&quot;USD_TO_SLL&quot;:20969.5,&quot;SLL_TO_USD&quot;:4.7688309210996924e-05,&quot;USD_TO_SOS&quot;:571.726701,&quot;SOS_TO_USD&quot;:0.001749087454287009,&quot;USD_TO_SRD&quot;:30.17,&quot;SRD_TO_USD&quot;:0.033145508783559825,&quot;USD_TO_SSP&quot;:130.26,&quot;SSP_TO_USD&quot;:0.0076769537847382165,&quot;USD_TO_STD&quot;:22281.8,&quot;STD_TO_USD&quot;:4.4879677584396233e-05,&quot;USD_TO_SVC&quot;:8.753045,&quot;SVC_TO_USD&quot;:0.1142459566927852,&quot;USD_TO_SYP&quot;:2512.53,&quot;SYP_TO_USD&quot;:0.0003980051979478852,&quot;USD_TO_SZL&quot;:18.131649,&quot;SZL_TO_USD&quot;:0.05515218169070006,&quot;USD_TO_THB&quot;:36.4495,&quot;THB_TO_USD&quot;:0.027435218590104116,&quot;USD_TO_TJS&quot;:10.654735,&quot;TJS_TO_USD&quot;:0.09385498560029883,&quot;USD_TO_TMT&quot;:3.5,&quot;TMT_TO_USD&quot;:0.2857142857142857,&quot;USD_TO_TND&quot;:3.122275,&quot;TND_TO_USD&quot;:0.3202792835352427,&quot;USD_TO_TOP&quot;:2.354811,&quot;TOP_TO_USD&quot;:0.4246625313029368,&quot;USD_TO_TRY&quot;:32.856198,&quot;TRY_TO_USD&quot;:0.030435657832351755,&quot;USD_TO_TTD&quot;:6.773833,&quot;TTD_TO_USD&quot;:0.14762690488531383,&quot;USD_TO_TWD&quot;:32.564998,&quot;TWD_TO_USD&quot;:0.030707817024892798,&quot;USD_TO_TZS&quot;:2656.036077,&quot;TZS_TO_USD&quot;:0.0003765009100062762,&quot;USD_TO_UAH&quot;:40.791763,&quot;UAH_TO_USD&quot;:0.02451475313778421,&quot;USD_TO_UGX&quot;:3706.858601,&quot;UGX_TO_USD&quot;:0.0002697702037326781,&quot;USD_TO_USD&quot;:1.0,&quot;USD_TO_UYU&quot;:40.070284,&quot;UYU_TO_USD&quot;:0.024956149549626352,&quot;USD_TO_UZS&quot;:12623.885068,&quot;UZS_TO_USD&quot;:7.921491637585305e-05,&quot;USD_TO_VND&quot;:25419.42208,&quot;VND_TO_USD&quot;:3.933999745756612e-05,&quot;USD_TO_VUV&quot;:118.722,&quot;VUV_TO_USD&quot;:0.008423038695439767,&quot;USD_TO_WST&quot;:2.8,&quot;WST_TO_USD&quot;:0.35714285714285715,&quot;USD_TO_XAF&quot;:606.563321,&quot;XAF_TO_USD&quot;:0.0016486324928968133,&quot;USD_TO_XAG&quot;:0.03247549,&quot;XAG_TO_USD&quot;:30.792453016105373,&quot;USD_TO_XAU&quot;:0.00042309,&quot;XAU_TO_USD&quot;:2363.563308043206,&quot;USD_TO_XCD&quot;:2.70255,&quot;XCD_TO_USD&quot;:0.37002090618119926,&quot;USD_TO_XDR&quot;:0.759838,&quot;XDR_TO_USD&quot;:1.316070004395674,&quot;USD_TO_XOF&quot;:606.563321,&quot;XOF_TO_USD&quot;:0.0016486324928968133,&quot;USD_TO_XPD&quot;:0.00102661,&quot;XPD_TO_USD&quot;:974.0797381673664,&quot;USD_TO_XPF&quot;:110.346041,&quot;XPF_TO_USD&quot;:0.009062400344748209,&quot;USD_TO_XPT&quot;:0.00101656,&quot;XPT_TO_USD&quot;:983.7097662705596,&quot;USD_TO_YER&quot;:250.375001,&quot;YER_TO_USD&quot;:0.003994008970568112,&quot;USD_TO_ZAR&quot;:18.1502,&quot;ZAR_TO_USD&quot;:0.05509581161640092,&quot;USD_TO_ZMW&quot;:24.735274,&quot;ZMW_TO_USD&quot;:0.04042809471202947,&quot;USD_TO_ZWL&quot;:322,&quot;ZWL_TO_USD&quot;:0.003105590062111801},&quot;options&quot;:{},&quot;mutex&quot;:{},&quot;in_transaction&quot;:false},&quot;rounding_method&quot;:null,&quot;app_id&quot;:&quot;4028392525744fc4a65da6a7f3e003a5&quot;,&quot;cache&quot;:{},&quot;force_refresh_rate_on_expire&quot;:false,&quot;rates_timestamp&quot;:&quot;2024-07-09T20:00:00.000+00:00&quot;,&quot;oer_rates&quot;:{&quot;AED&quot;:3.673,&quot;AFN&quot;:71.158522,&quot;ALL&quot;:92.733468,&quot;AMD&quot;:388.080536,&quot;ANG&quot;:1.802963,&quot;AOA&quot;:871.15,&quot;ARS&quot;:917.2448,&quot;AUD&quot;:1.483371,&quot;AWG&quot;:1.8,&quot;AZN&quot;:1.7,&quot;BAM&quot;:1.807955,&quot;BBD&quot;:2,&quot;BDT&quot;:117.547554,&quot;BGN&quot;:1.80936,&quot;BHD&quot;:0.376898,&quot;BIF&quot;:2879.427563,&quot;BMD&quot;:1,&quot;BND&quot;:1.350514,&quot;BOB&quot;:6.912713,&quot;BRL&quot;:5.414,&quot;BSD&quot;:1,&quot;BTC&quot;:1.727653e-05,&quot;BTN&quot;:83.513919,&quot;BWP&quot;:13.537011,&quot;BYN&quot;:3.273879,&quot;BZD&quot;:2.016473,&quot;CAD&quot;:1.363175,&quot;CDF&quot;:2846.150192,&quot;CHF&quot;:0.897795,&quot;CLF&quot;:0.033902,&quot;CLP&quot;:935.45,&quot;CNH&quot;:7.288815,&quot;CNY&quot;:7.2726,&quot;COP&quot;:4050.094875,&quot;CRC&quot;:534.844804,&quot;CUC&quot;:1,&quot;CUP&quot;:25.75,&quot;CVE&quot;:101.927839,&quot;CZK&quot;:23.382599,&quot;DJF&quot;:177.827972,&quot;DKK&quot;:6.897908,&quot;DOP&quot;:59.141622,&quot;DZD&quot;:134.298383,&quot;EGP&quot;:48.0756,&quot;ERN&quot;:15,&quot;ETB&quot;:57.760285,&quot;EUR&quot;:0.9247,&quot;FJD&quot;:2.2342,&quot;FKP&quot;:0.781873,&quot;GBP&quot;:0.781873,&quot;GEL&quot;:2.74,&quot;GGP&quot;:0.781873,&quot;GHS&quot;:15.405948,&quot;GIP&quot;:0.781873,&quot;GMD&quot;:67.75,&quot;GNF&quot;:8614.415277,&quot;GTQ&quot;:7.769638,&quot;GYD&quot;:209.304128,&quot;HKD&quot;:7.81114,&quot;HNL&quot;:24.777797,&quot;HRK&quot;:6.967022,&quot;HTG&quot;:132.250562,&quot;HUF&quot;:364.17074,&quot;IDR&quot;:16266.888901,&quot;ILS&quot;:3.67293,&quot;IMP&quot;:0.781873,&quot;INR&quot;:83.48315,&quot;IQD&quot;:1310.48964,&quot;IRR&quot;:42087.5,&quot;ISK&quot;:137.89,&quot;JEP&quot;:0.781873,&quot;JMD&quot;:156.816338,&quot;JOD&quot;:0.7087,&quot;JPY&quot;:161.2895,&quot;KES&quot;:128.25,&quot;KGS&quot;:85.6423,&quot;KHR&quot;:4117.1952,&quot;KMF&quot;:454.500277,&quot;KPW&quot;:900,&quot;KRW&quot;:1383.74908,&quot;KWD&quot;:0.30604,&quot;KYD&quot;:0.833722,&quot;KZT&quot;:480.519165,&quot;LAK&quot;:22118.792176,&quot;LBP&quot;:89575.907135,&quot;LKR&quot;:304.129652,&quot;LRD&quot;:194.48386,&quot;LSL&quot;:18.137968,&quot;LYD&quot;:4.854894,&quot;MAD&quot;:9.854455,&quot;MDL&quot;:17.719587,&quot;MGA&quot;:4498.01411,&quot;MKD&quot;:56.900459,&quot;MMK&quot;:2203.340001,&quot;MNT&quot;:3450,&quot;MOP&quot;:8.05077,&quot;MRU&quot;:39.616738,&quot;MUR&quot;:46.76,&quot;MVR&quot;:15.46,&quot;MWK&quot;:1734.791738,&quot;MXN&quot;:17.913261,&quot;MYR&quot;:4.7075,&quot;MZN&quot;:63.909993,&quot;NAD&quot;:18.137968,&quot;NGN&quot;:1406,&quot;NIO&quot;:36.82836,&quot;NOK&quot;:10.60583,&quot;NPR&quot;:133.622338,&quot;NZD&quot;:1.632293,&quot;OMR&quot;:0.384974,&quot;PAB&quot;:1,&quot;PEN&quot;:3.792286,&quot;PGK&quot;:3.911092,&quot;PHP&quot;:58.514998,&quot;PKR&quot;:278.512736,&quot;PLN&quot;:3.935086,&quot;PYG&quot;:7543.135459,&quot;QAR&quot;:3.647734,&quot;RON&quot;:4.598,&quot;RSD&quot;:108.222,&quot;RUB&quot;:87.000408,&quot;RWF&quot;:1308.849824,&quot;SAR&quot;:3.750806,&quot;SBD&quot;:8.435801,&quot;SCR&quot;:13.825882,&quot;SDG&quot;:601,&quot;SEK&quot;:10.553268,&quot;SGD&quot;:1.350669,&quot;SHP&quot;:0.781873,&quot;SLL&quot;:20969.5,&quot;SOS&quot;:571.726701,&quot;SRD&quot;:30.17,&quot;SSP&quot;:130.26,&quot;STD&quot;:22281.8,&quot;STN&quot;:22.647963,&quot;SVC&quot;:8.753045,&quot;SYP&quot;:2512.53,&quot;SZL&quot;:18.131649,&quot;THB&quot;:36.4495,&quot;TJS&quot;:10.654735,&quot;TMT&quot;:3.5,&quot;TND&quot;:3.122275,&quot;TOP&quot;:2.354811,&quot;TRY&quot;:32.856198,&quot;TTD&quot;:6.773833,&quot;TWD&quot;:32.564998,&quot;TZS&quot;:2656.036077,&quot;UAH&quot;:40.791763,&quot;UGX&quot;:3706.858601,&quot;USD&quot;:1,&quot;UYU&quot;:40.070284,&quot;UZS&quot;:12623.885068,&quot;VES&quot;:36.456504,&quot;VND&quot;:25419.42208,&quot;VUV&quot;:118.722,&quot;WST&quot;:2.8,&quot;XAF&quot;:606.563321,&quot;XAG&quot;:0.03247549,&quot;XAU&quot;:0.00042309,&quot;XCD&quot;:2.70255,&quot;XDR&quot;:0.759838,&quot;XOF&quot;:606.563321,&quot;XPD&quot;:0.00102661,&quot;XPF&quot;:110.346041,&quot;XPT&quot;:0.00101656,&quot;YER&quot;:250.375001,&quot;ZAR&quot;:18.1502,&quot;ZMW&quot;:24.735274,&quot;ZWL&quot;:322},&quot;source&quot;:&quot;USD&quot;}},&quot;hasAdditionalPaymentMethods&quot;:false,&quot;quantityRemaining&quot;:null,&quot;qtyLimitDisplayEnabled&quot;:false,&quot;qtyLimitDisplayThreshold&quot;:null}) }" context="checkoutPanel">
+                            <div class="panel-heading">
+
+                                <h1 class="checkout-panel-title js-checkout-panel-price-discountable">
+                                    Early Registration $995 
+                                  </h1>
+
+                            </div>
+
+                            <div eval="new App.CheckoutPriceBreakdown(this, { alwaysShowBreakdown: false })"></div>
+
+                            <div class="panel-body">
+                                <div id="main-flash-messages">
+                                </div>
+
+                                <div define="{ couponPanel: new App.CouponPanel(this) }" context="couponPanel" id="coupon-panel" class="coupon-validation">
+                                    <div class="form-group coupon-field">
+                                        <div class="input-group">
+                                            <input type="text" name="coupon" class="form-control coupon-code-field" value="" placeholder="Coupon Code" data-invalid-message="Invalid coupon" data-valid-message="Coupon successfully applied" data-parsley-pattern="^\s*$" data-parsley-trigger="submit" data-parsley-error-message="Please apply your coupon">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default coupon-code-button js-keep-visible" data-url="/offers/vSzcSny2/checkout/validate_coupon">
+                                                          Apply
+                                                        </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input data-js-time-zone="" type="hidden" name="checkout_offer[member][time_zone]" id="checkout_offer_member_time_zone"/>
+                                <a class="checkout-panel__log-in-link" href="https://courses.appliedperformancecoach.com/login?offer_token=vSzcSny2">Log in</a>
+                                <div class="form-group email required checkout_offer_member_email">
+                                    <input class="form-control string email required form-control required" autocomplete="email" placeholder="Email Address" type="email" value="" name="checkout_offer[member][email]" id="checkout_offer_member_email"/>
+                                </div>
+
+                                <input type="hidden" name="frictionless" id="frictionless" value="true"/>
+
+                                <div class="hide" define="{ checkoutPaymentStep: new App.CheckoutPaymentStep(this, false, &quot;stripe&quot;, false) }" bind-show="showPayment">
+
+                                    <input type="hidden" name="checkout_offer[payment_provider]" bind="checkoutPaymentStep.paymentType"/>
+
+                                    <div class=" hide" bind-show="checkoutPaymentStep.paymentType == &#39;stripe&#39; || checkoutPaymentStep.paymentType == &#39;kajabi_payments&#39; || checkoutPaymentStep.hasAdditionalPaymentMethods">
+
+                                        <div class="new-credit-card" data-stripe-elements-form="pk_live_GM2gUsVfs3fY1xot5C7WDhBP" data-stripe-elements-options="{&quot;stripeAccount&quot;:&quot;acct_1MULT0HeeJbWbUSx&quot;,&quot;analyticsOptions&quot;:{&quot;event_category&quot;:&quot;member_checkout&quot;,&quot;productSku&quot;:2149634238,&quot;productName&quot;:&quot;Applied Performance Coach Certification and Mentorship (Summer 2024)&quot;,&quot;checkoutVersion&quot;:&quot;next_gen&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;transactionRevenue&quot;:&quot;995.0&quot;,&quot;offerType&quot;:&quot;single&quot;,&quot;quantityRemainingDisplayed&quot;:false,&quot;memberLoginRequired&quot;:false,&quot;priceStrategy&quot;:&quot;fixed&quot;,&quot;siteId&quot;:2147639184,&quot;siteName&quot;:&quot;Applied Performance Coach&quot;,&quot;accountId&quot;:2147620358,&quot;heroTier&quot;:&quot;250k&quot;,&quot;businessType&quot;:&quot;coach&quot;,&quot;experience&quot;:&quot;existing_online_part_time&quot;,&quot;industry&quot;:&quot;health_fitness&quot;,&quot;paymentMethod&quot;:&quot;stripe&quot;,&quot;isKajabiPayments&quot;:false},&quot;publishableKey&quot;:&quot;pk_live_GM2gUsVfs3fY1xot5C7WDhBP&quot;,&quot;checkoutPageColor&quot;:&quot;#0d2b52&quot;,&quot;mode&quot;:&quot;card&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;amount&quot;:99500,&quot;exponent&quot;:2,&quot;siteName&quot;:&quot;Applied Performance Coach&quot;,&quot;stripeElementTimeoutPromptMessage&quot;:&quot;Difficulty connecting to payment processor. Refresh and try again&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;apiVersion&quot;:&quot;2019-05-16&quot;,&quot;hidePostalCode&quot;:&quot;false&quot;}">
+                                            <div class="form-group">
+                                                <div id="card-element" class="form-control card-element"></div>
+                                            </div>
+                                        </div>
+                                        <div id="manage_payment_method" class="form-group">
+                                            <div class="checkbox">
+                                                <label class="checkbox__label--group">
+                                                    <input name="checkout_offer[consent_to_store_payment_method]" type="hidden" value="0"/>
+                                                    <input class="boolean optional" type="checkbox" value="1" name="checkout_offer[consent_to_store_payment_method]" id="checkout_offer_consent_to_store_payment_method"/>
+
+                                                            Store this card for future purchases
+                                                            
+                                                    <span class="checkbox__label__hint" data-toggle="tooltip" title="Your payment information will be stored on a secure server for future purchases">
+                                                        <i class="mi checkbox__label__icon" aria-hidden="true">help_outline</i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <input value="card" type="hidden" name="checkout_offer[payment_method_type]" id="checkout_offer_payment_method_type"/>
+
+                                        <input type="hidden" name="checkout_offer[payment_intent_id]" data-stripe-payment-intent/>
+                                        <input id="new_stripe_payment_method" type="hidden" name="checkout_offer[payment_method_id]" data-stripe-payment-method/>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group boolean optional checkout_offer_opt_in">
+                                    <div class="checkbox">
+                                        <input value="0" type="hidden" name="checkout_offer[opt_in]"/>
+                                        <label class="boolean optional" for="checkout_offer_opt_in">
+                                            <input class="boolean optional" type="checkbox" value="1" name="checkout_offer[opt_in]" id="checkout_offer_opt_in"/>
+                                            Subscribe to our email list.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="coupon_code" id="stripe_coupon_id" value=""/>
+                                <input type="hidden" name="single_use_code" id="single_use_code" value=""/>
+                                <input type="hidden" name="affiliate_coupon_code" id="affiliate_coupon_code" value=""/>
+
+                                <div class="checkout-panel__btn-wrapper hide" bind-show="typeof checkoutPaymentStep === &#39;undefined&#39; || checkoutPaymentStep.paymentType != &#39;paypal&#39; || window.freePwyw || freeForeverCouponApplied">
+                                    <input type="submit" name="commit" value="Complete my purchase" bind-event-click="submitCheckout({&quot;event_category&quot;:&quot;member_checkout&quot;,&quot;productSku&quot;:2149634238,&quot;productName&quot;:&quot;Applied Performance Coach Certification and Mentorship (Summer 2024)&quot;,&quot;checkoutVersion&quot;:&quot;next_gen&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;transactionRevenue&quot;:&quot;995.0&quot;,&quot;offerType&quot;:&quot;single&quot;,&quot;quantityRemainingDisplayed&quot;:false,&quot;memberLoginRequired&quot;:false,&quot;priceStrategy&quot;:&quot;fixed&quot;,&quot;siteId&quot;:2147639184,&quot;siteName&quot;:&quot;Applied Performance Coach&quot;,&quot;accountId&quot;:2147620358,&quot;heroTier&quot;:&quot;250k&quot;,&quot;businessType&quot;:&quot;coach&quot;,&quot;experience&quot;:&quot;existing_online_part_time&quot;,&quot;industry&quot;:&quot;health_fitness&quot;,&quot;paymentMethod&quot;:&quot;stripe&quot;,&quot;isKajabiPayments&quot;:false})" class="btn btn-primary btn-block checkout-panel-btn" data-disable-with="Submitting..."/>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkout-content">
+                            <img class="img-responsive checkout-content-img" kjb-settings-id="offer-image-section" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production//site/2147639184/images/b51610a-b310-e7d1-64cb-74bc716c7eca_0bf18357-444c-498e-ae3c-375c924933fb.png"/>
+                            <h1 class="checkout-content-title" kjb-settings-id="offer-title-section">Applied Performance Coach Certification and Mentorship (Summer 2024)</h1>
+                            <div class="checkout-content-body" kjb-settings-id="checkout-copy-section">
+                                <h3>Summer&nbsp;cohort starts&nbsp;July 21st and you will have access to content immediately after registering.&nbsp;</h3>
+                                <h3>All of This and More:</h3>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;4 Weekly Live Lectures and Q&amp;A Sessions
+                                    </div>
+                                </div>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;20+ Recorded Lectures
+                                    </div>
+                                </div>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;50+ Hours of Live and Recorded Content
+                                    </div>
+                                </div>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;Discount to APC Annual Summit
+                                    </div>
+                                </div>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;Lifetime Access to Course
+                                    </div>
+                                </div>
+                                <div class="green-tick-list-item">
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;Join APC Community and Network
+                                    </div>
+                                    <div class="standard-grid-green-tick">
+                                        <img src="https://global-uploads.webflow.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" alt="" class="image-4">
+                                        &nbsp;NSCA CEUs
+                                    </div>
+                                    <div class="standard-grid-green-tick">&nbsp;</div>
+                                    <h4 class="standard-grid-green-tick">
+                                        <a href="https://www.appliedperformancecoach.com/" target="_blank" rel="noopener noreferrer">The full course curriculum and more can be found&nbsp;here</a>
+                                    </h4>
+                                </div>
+                                <p class="link">
+                                    <a href="https://courses.appliedperformancecoach.com/offers/vSzcSny2
+                                    /checkout">
+                                        One Payment 
+                                        <strong>995 USD</strong>
+                                    </a>
+                                    <a href="https://courses.appliedperformancecoach.com/offers/LK4s4q4w
+                                    /checkout?1" title="3 x $333">
+                                        Three Payments 
+                                        <strong>333 USD</strong>
+                                    </a>
+                                </p>
+                                <p class="link">
+                                    <strong>&nbsp;</strong>
+                                </p>
+                                <div style="display: none;">&nbsp;</div>
+                                <div style="display: none;">&nbsp;</div>
+                                <div style="display: none;">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="checkout-testimonials">
+                            <h4 class="checkout-testimonials-title" kjb-settings-id="offer_testimonial_title">What People Are Saying:</h4>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379504">
+                                <q class="checkout-testimonials-quote">The APC course is a small piece of Ramsey&#39;s genius but a huge contribution to our field. All of the young up and coming performance coaches who aspire into becoming successful in their coaching journey should invest in their professional development starting with this course.</q>
+                                <p class="checkout-testimonials-author">Mike Guevara (Mike G), NBA Performance Coach</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379503">
+                                <q class="checkout-testimonials-quote">APC combines a comprehensive summary of current research related to the most impactful areas of sport performance with high level mentorship and an incredible community of coaches across sports looking to get better. Ramsey has created a much-needed opportunity for coaches at all levels to continue pushing their development.</q>
+                                <p class="checkout-testimonials-author">Kevin Neeld, Boston Bruins, NHL</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379502">
+                                <q class="checkout-testimonials-quote">This program is not for the faint of heart, but if you desire to progress yourself in your current role or profession, this is it. Whether you’re an up and coming professional or a seasoned coach, associating yourself with Ramsey and the APC will challenge you to grow. What I appreciate the most is the culture engrained in the program, coaches uplifting and helping one another. Ultimately, this is what it is all about, and you don’t want to miss out.</q>
+                                <p class="checkout-testimonials-author">Joey Harty, Sporting KC, MLS</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379501">
+                                <q class="checkout-testimonials-quote">Applied Performance Coach is a must-have course for anyone looking to further their practical education using evidence-based means. Coach Ramsey provides foundational source material on all subject matter with a thought-provoking weekly lecture that welcomes open dialogue among all coaches in real time. There’s high quality, applicable information to be gained for new and veteran coaches alike by joining Team APC.</q>
+                                <p class="checkout-testimonials-author">Andy King, San Francisco Giants, MLB</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379500">
+                                <q class="checkout-testimonials-quote">Ramsey is in a class of his own. His combination of knowledge, experience, and class sets him apart from the rest. Whatever this man does needs all your attention and respect.</q>
+                                <p class="checkout-testimonials-author">Corey Schlesinger, Phoenix Suns, NBA</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379499">
+                                <q class="checkout-testimonials-quote">Coach Ramsey has put together the best professional development course on the market. You can tell from the first lecture how passionate he is about helping you develop and that passion is contagious. The course is tough and challenging but you won&#39;t find another professional development course that will truly help you become a better coach than this</q>
+                                <p class="checkout-testimonials-author">Taran Smith, Fall 2021 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379498">
+                                <q class="checkout-testimonials-quote">Dr. Nijem&#39;s APC course has set the standard for continuing education. He provides his cohorts with the skills necessary to effectively apply research, leadership, and personal development. As both a coach and educator, Dr. Nijem has given me resources to further bridge the gap between academia and the weight room. I highly recommend this course to any coach, healthcare professional, or clinician to better help athletes.</q>
+                                <p class="checkout-testimonials-author">Dominic Defiesta, Summer 2022 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379497">
+                                <q class="checkout-testimonials-quote">By far the best course I have ever taken. Coach Ramsey will guide you through some of the most important topics of S&amp;C. A must do course if you want to take your craft to the next level.</q>
+                                <p class="checkout-testimonials-author">Roberto Iezzi, Winter 2022 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379496">
+                                <q class="checkout-testimonials-quote">This course is the best decision I have made during my journey as Strength and Conditioning professional. Dr. Ramsey is truly a special person, as it is so evident how much he cares. He truly wants to see his community succeed and will do anything he can to bring others up with him along the ride. I cannot recommend this course enough, as it is a must for anyone looking to exponentially grow in this field.</q>
+                                <p class="checkout-testimonials-author">Danny Robertson, Summer 2022 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379495">
+                                <q class="checkout-testimonials-quote">Even though I have a Masters degree this course takes you deeper with a lot of practical applications. Ramsey is a top class coach and person and he is raising the bar of what a modern day strength coach should be. I&#39;m proud to be the part of the APC family.</q>
+                                <p class="checkout-testimonials-author">Rok Razdevesk, Fall 2022 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379494">
+                                <q class="checkout-testimonials-quote">The APC course is far and away the best option for practical continuing education currently in the field. This course touches on every topic a modern Performance Coach needs to work at a high level. I would recommend it to any coach serious about leveling up!</q>
+                                <p class="checkout-testimonials-author">Phillip Nash, Summer 2021 Cohort</p>
+                            </div>
+                            <div class="checkout-testimonials-item" kjb-settings-id="testimonial_2148379493">
+                                <q class="checkout-testimonials-quote">I cannot say enough positive things about this course. Whether you’re new to coaching athletes or been in the game for 10+ years there is something here for you. This is not a cake walk course- but a thorough, well- rounded overview of all aspects of S&amp;C lead by someone who is clearly passionate about building better practitioners in our field.</q>
+                                <p class="checkout-testimonials-author">Ashleigh Beaver, Summer 2022 Cohort</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="https://kajabi-app-assets.kajabi-cdn.com/assets/checkout_manifest-87aad43a8e5349bcf22bbd899ffa7231351be804bdd0393ea5f16f982bc239a0.js"></script>
+
+    <!-- Footer Code -->
+    <script>
+    /*
+    function demoMatchClick() {
+      var re = new RegExp(document.demoMatch.regex.value);
+      if (document.demoMatch.subject.value.match(re)) {
+        alert("Successful match");
+      } else {
+        alert("No match");
+      }
+    }
+
+    function demoShowMatchClick() {
+      var re = new RegExp(document.demoMatch.regex.value);
+      var m = re.exec(document.demoMatch.subject.value);
+      if (m == null) {
+        alert("No match");
+      } else {
+        var s = "Match at position " + m.index + ":\n";
+        for (i = 0; i < m.length; i++) {
+          s = s + m[i] + "\n";
+        }
+        alert(s);
+      }
+    }
+
+    function demoReplaceClick() {
+      var re = new RegExp(document.demoMatch.regex.value, "g");
+      document.demoMatch.result.value =
+        document.demoMatch.subject.value.replace(re,
+          document.demoMatch.replacement.value);
+    }
+    // -->*/
+    </script>
+    <script>
+    $(document).ready(function() {
+        var get_url = window.location.href;
+        var get_s = get_url.split('?');
+        var get_x = get_s[1] * 1;
+        setTimeout(function() {
+            if (get_x == 1) {
+                $('.prices_s:nth-child(3)').addClass('act');
+            }
+            else if (get_x == 2) {
+                $('.prices_s:nth-child(4)').addClass('act');
+            } else {
+                $('.prices_s:nth-child(2)').addClass('act');
+            }
+        }, 700);
+
+        var get_link = $('.link a').html();
+        if (typeof (get_link) === 'undefined') {
+
+        } else {
+            $('.checkout_offer_member_email').after('<div class="t_prices"><h3 class="b_heading">PAYMENT OPTIONS</h3></div>');
+            $('.link a').each(function() {
+                var get_t = $(this).html();
+                var get_url = $(this).attr('href');
+                var get_ti = $(this).attr('title');
+                var get_sub_t = $(this).find('strong').html();
+
+                setTimeout(function() {
+                    $('.t_prices').append('<a class="prices_s" href="' + get_url + '"><div class="p_hodler"><h3 class="price_s_title"><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-circle-thin" aria-hidden="true"></i>' + get_t + '</h3><div class="price_s_price"><span class="p_top">' + get_sub_t + '</span><span class="p_bottom">' + get_ti + '</span></div></div></a>');
+                }, 500);
+            });
+        }
+
+    });
+    </script>
+
+    <script src="https://kajabi-app-assets.kajabi-cdn.com/assets/fingerprinter-990760b4faec9b68e3d622cd174e4bc862fac3f24fb3950476d4eb7d63bc0665.js"></script>
+
+    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    <script src="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/kj_uploader-ccc49c68.js" crossorigin="anonymous" type="module"></script>
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/main-9b7cd2f5.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/index-886a85f2.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/main-d60fb63c.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/_commonjsHelpers-f17db62c.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/index-28fba28f.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/index-f16544ee.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/index-dd84ea2a.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/uuid-fbc100ee.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/BrowserLogger-8cc83e6f.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/AmplitudeDataHelper-392d1e94.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/index-48f72409.js" as="script" crossorigin="anonymous">
+    <link rel="modulepreload" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/clientInfo-ad9512bd.js" as="script" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://kajabi-app-assets.kajabi-cdn.com/vite/assets/kj_uploader-6fe461ee.css"/>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dompurify@2.2.3/dist/purify.min.js"></script>
+
+    <script type="text/javascript">
+    +function(a, p, P, b, y) {
+        a.appboy = {};
+        a.appboyQueue = [];
+        for (var s = "DeviceProperties Card Card.prototype.dismissCard Card.prototype.removeAllSubscriptions Card.prototype.removeSubscription Card.prototype.subscribeToClickedEvent Card.prototype.subscribeToDismissedEvent Banner CaptionedImage ClassicCard ControlCard ContentCards ContentCards.prototype.getUnviewedCardCount Feed Feed.prototype.getUnreadCardCount ControlMessage InAppMessage InAppMessage.SlideFrom InAppMessage.ClickAction InAppMessage.DismissType InAppMessage.OpenTarget InAppMessage.ImageStyle InAppMessage.Orientation InAppMessage.TextAlignment InAppMessage.CropType InAppMessage.prototype.closeMessage InAppMessage.prototype.removeAllSubscriptions InAppMessage.prototype.removeSubscription InAppMessage.prototype.subscribeToClickedEvent InAppMessage.prototype.subscribeToDismissedEvent FullScreenMessage ModalMessage HtmlMessage SlideUpMessage User User.Genders User.NotificationSubscriptionTypes User.prototype.addAlias User.prototype.addToCustomAttributeArray User.prototype.getUserId User.prototype.incrementCustomUserAttribute User.prototype.removeFromCustomAttributeArray User.prototype.setAvatarImageUrl User.prototype.setCountry User.prototype.setCustomLocationAttribute User.prototype.setCustomUserAttribute User.prototype.setDateOfBirth User.prototype.setEmail User.prototype.setEmailNotificationSubscriptionType User.prototype.setFirstName User.prototype.setGender User.prototype.setHomeCity User.prototype.setLanguage User.prototype.setLastKnownLocation User.prototype.setLastName User.prototype.setPhoneNumber User.prototype.setPushNotificationSubscriptionType InAppMessageButton InAppMessageButton.prototype.removeAllSubscriptions InAppMessageButton.prototype.removeSubscription InAppMessageButton.prototype.subscribeToClickedEvent display display.automaticallyShowNewInAppMessages display.destroyFeed display.hideContentCards display.showContentCards display.showFeed display.showInAppMessage display.toggleContentCards display.toggleFeed changeUser destroy getDeviceId initialize isPushBlocked isPushGranted isPushPermissionGranted isPushSupported logCardClick logCardDismissal logCardImpressions logContentCardsDisplayed logCustomEvent logFeedDisplayed logInAppMessageButtonClick logInAppMessageClick logInAppMessageHtmlClick logInAppMessageImpression logPurchase openSession registerAppboyPushMessages removeAllSubscriptions removeSubscription requestContentCardsRefresh requestFeedRefresh requestImmediateDataFlush resumeWebTracking setLogger setSdkAuthenticationSignature stopWebTracking subscribeToContentCardsUpdates subscribeToFeedUpdates subscribeToInAppMessage subscribeToNewInAppMessages subscribeToSdkAuthenticationFailures toggleAppboyLogging trackLocation unregisterAppboyPushMessages wipeData".split(" "), i = 0; i < s.length; i++) {
+            for (var m = s[i], k = a.appboy, l = m.split("."), j = 0; j < l.length - 1; j++)
+                k = k[l[j]];
+            k[l[j]] = (new Function("return function " + m.replace(/\./g, "_") + "(){window.appboyQueue.push(arguments); return true}"))()
+        }
+        window.appboy.getCachedContentCards = function() {
+            return new window.appboy.ContentCards
+        };
+        window.appboy.getCachedFeed = function() {
+            return new window.appboy.Feed
+        };
+        window.appboy.getUser = function() {
+            return new window.appboy.User
+        };
+        (y = p.createElement(P)).type = 'text/javascript';
+        y.src = 'https://js.appboycdn.com/web-sdk/3.3/appboy.min.js';
+        y.async = 1;
+        (b = p.getElementsByTagName(P)[0]).parentNode.insertBefore(y, b)
+    }(window, document, 'script');
+    </script>
+
+</body>
+</html>
