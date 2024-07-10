@@ -2117,7 +2117,7 @@ html {
     --light-pink: #f199a6;
     --cornflower-blue: #76abfc;
     --relume-library-lite-rl-black: black;
-    --lavender: #e1e9ff;
+    --lavender: #fff;
     --flowui-component-library-primary-base: #642eff;
     --light-steel-blue-3: #cde1ff;
     --dark-blue: #01068f;
@@ -4965,7 +4965,7 @@ html {
   }
   
   .footer-section {
-    background-color: var(--light-steel-blue);
+    background-color: var(--midnight-blue-2);
   }
   
   .levelup-lottie {
@@ -6481,7 +6481,7 @@ html {
   }
   
   .accordion-text {
-    color: var(--midnight-blue-2);
+    color: #010000;
     font-size: 1.3em;
   }
   
@@ -6541,7 +6541,7 @@ html {
   }
   
   .accordion-title {
-    color: var(--midnight-blue-2);
+    color: #010000;
     white-space: normal;
     flex: none;
     width: 100%;
