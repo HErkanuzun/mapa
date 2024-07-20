@@ -5356,13 +5356,14 @@ html {
     position: relative;
     width: 100%;
     height: auto;
-}
+  }
 
-.bg-img {
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
+  .bg-img {
+   position:absolute;
+    height:100vh;
+    object-fit:cover;
+    width:100vw
+  }
 
 
   .hero-text-div {
@@ -7124,6 +7125,13 @@ html {
     .body {
       font-size: 1.3vw;
     }
+
+    .bg-img {
+      position:absolute;
+       height:93vh;
+       object-fit:cover;
+       width:100vw;
+     }
     
     .wave {
       width: 100%;
