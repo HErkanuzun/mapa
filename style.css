@@ -3362,6 +3362,7 @@ html {
   }
   
   .container.hero {
+    position: relative;
     grid-row-gap: 0em;
     flex-direction: column;
     justify-content: space-between;
@@ -3414,6 +3415,8 @@ html {
     position: relative;
   }
   
+
+
   .hero-bottom {
     flex-direction: column;
     justify-content: center;
@@ -3474,7 +3477,7 @@ html {
   .hero-cta-text:hover {
     color: #000;
   }
-  
+ 
   .hero-cta-button {
     background-color: var(--royal-blue);
     border-radius: 2em;
