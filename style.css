@@ -5356,13 +5356,13 @@ html {
     position: relative;
     width: 100%;
     height: auto;
-  }
+}
 
-  .bg-img {
+.bg-img {
     width: 100%;
     height: auto;
     z-index: -1;
-  }
+}
 
 
   .hero-text-div {
