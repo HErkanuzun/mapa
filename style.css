@@ -7077,7 +7077,12 @@ html {
     .hero-text-div {
       width: 88%;
     }
-  
+    .bg-img {
+      position:absolute;
+      height:120vh;
+      object-fit:cover;
+      width:100vw
+     }
     .hero-subheading {
       width: 80%;
     }
@@ -7107,7 +7112,8 @@ html {
     .hero-text-div {
       width: 100%;
     }
-  
+    
+    
     .x-container.is-hero {
       justify-content: space-around;
     }
