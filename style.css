@@ -5654,10 +5654,10 @@ html {
   }
   
   .blue-pill {
-    color: #4d81ee;
+    color: #3f0c1e;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background-color: #deeafc;
+    background-color: #15171b;
     border-radius: 20px;
     padding: 2px 20px;
     font-size: 12px;
@@ -6807,7 +6807,7 @@ html {
   }
   
   .bridgespan {
-    background-color: var(--light-green);
+    background-color: var(--midnight-blue-2);
     padding-left: 2px;
     padding-right: 2px;
   }
