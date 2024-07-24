@@ -5658,8 +5658,8 @@ html {
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #15171b;
-    border-radius: 20px;
-    padding: 2px 20px;
+    border-radius: 32px;
+    padding: 6px 20px;
     font-size: 12px;
     font-weight: 700;
     display: inline-block;
@@ -5677,16 +5677,16 @@ html {
   }
   
   .blue-pill.center {
-    color: #0d0628;
+    color: #E73525;
     text-align: center;
-    background-color: #bfd9ff;
-    margin-bottom: 2em;
-    font-size: 1.3em;
+    background-color: #bef0c6;
+    margin-bottom: 3em;
+    font-size: 1.8em;
   }
   
   .blue-pill.center.larger {
-    background-color: var(--light-steel-blue);
-    color: #f1eff9;
+    background-color: #bef0c6;
+    color: #E73525;
     margin-top: 2em;
     margin-bottom: 0;
     font-size: 1.3em;
@@ -5696,6 +5696,8 @@ html {
     background-color: #bef0c6;
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left:1em !important;
+    margin-right:1em !important;
     font-size: 1.5em;
   }
   
